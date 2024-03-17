@@ -1,0 +1,52 @@
+@import url("reset.css");
+.intro{
+    color:aqua;
+}
+li{
+    color:rgb(72, 160, 116);
+}
+.sub-title{
+    color:rgb(255, 0, 179);
+}
+.title3,
+.title4{
+color:rgb(228, 144, 18);
+}
+#footer{
+    color:brown;
+}
+
+.text p{
+    color:rgb(21, 240, 167);
+}
+
+[class*="add"]{
+    color:rgb(134, 199, 188);
+}
+.danger{
+    color:red;
+}
+p{
+    color:green;
+}
+h4{
+    color:black;
+}
+.intro .list{
+    color:rgba(236, 225, 16, 0.418)
+}
+.text3 h2{
+    color:rgb(94, 161, 238);
+}
+.text3 .final{
+    color:rgb(94, 228, 238);
+}
+.text3 p{
+    color:rgb(5, 115, 241);
+}
+.text2.addition{
+    color: black;
+}
+.title3 .telefon {
+    color:black;
+}
