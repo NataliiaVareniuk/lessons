@@ -1,0 +1,57 @@
+@font-face {
+	font-family: "Prociono";
+	src: url("../fonts/Prociono-Regular.woff2") format("woff2"),
+		url("../fonts/Prociono-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Kyiv Type Titling Medium";
+	src: url("../fonts/KyivTypeTitling-Medium3.woff2") format("woff2"),
+		url("../fonts/KyivTypeTitling-Medium3.woff") format("woff");
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Ravi Prakash";
+	src: url("../fonts/RaviPrakash-Regular.woff2") format("woff2"),
+		url("../fonts/RaviPrakash-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Proxima Nova Ligh";
+	src: url("../fonts/ProximaNova-Light.woff2") format("woff2"),
+		url("../fonts/ProximaNova-Light.woff") format("woff");
+	font-display: swap;
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Proxima Nova Regular";
+	src: url("../fonts/Prociono-Regular.woff2") format("woff2"),
+		url("../fonts/ProximaNova-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Proxima Nova Semibold";
+	src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2"),
+		url("../fonts/ProximaNova-Semibold.woff") format("woff");
+	font-display: swap;
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Proxima Nova Bold";
+	src: url("../fonts/ProximaNova-Bold.woff2") format("woff2"),
+		url("../fonts/ProximaNova-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}

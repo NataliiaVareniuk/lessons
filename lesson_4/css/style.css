@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Prociono:regular');
+@import url('https://fonts.googleapis.com/css?family=Ravi+Prakash:regular');
+
+@import url('https://fonts.googleapis.com/css2?family=Prociono&family=Ravi+Prakash&display=swap');
+
+
+@import url("fonts.css");
+@import url("reset.css");
+
+
+body {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #2b2929;
+    line-height: 1.875;
+
+}
+
+.header h1 {
+    font-family: "Ravi Prakash", sans-serif;
+    font-size: 48px;
+    text-align: center;
+    color: crimson;
+    line-height: 70px;
+
+}
+
+.list-header {
+    font-family: "Prociono", sans-serif;
+    font-size: 24px;
+    text-align: left;
+    line-height: 1.5;
+    list-style: circle;
+
+}
+
+.history  {
+    font-family: "Ravi Prakash", sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    color: crimson;
+    line-height: 125%;
+
+}
+
+.history h2 {
+    font-family: "Kyiv Type Titling Medium", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: blue;
+    text-shadow: 5px 5px 10px yellow, 5px -2px 10px rgb(42, 173, 224);
+
+}
+
+.house2{
+    font-size: 48;
+      color: yellowgreen; 
+    text-decoration: overline;
+    text-decoration-style: dashed;
+    text-shadow: 1px 1px 1px rgb(0, 217, 255);
+}
+.house3{
+    font-family: "Kyiv Type Titling Medium", sans-serif;
+    font-size: 48;
+      color: rgb(68, 92, 21); 
+    text-transform: uppercase;
+    text-align: right;
+    
+}
+.house4{
+    font-family: "Kyiv Type Titling Medium", sans-serif;
+    font-size: 12px;
+    text-align: center;
+   
+    font-weight: 700;
+   line-height: 110%; 
+
+}
+
+.fact1 {
+    font-family: "Ravi Prakash", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2;
+    color: green;
+    text-decoration: underline;
+}
+
+.fact2 {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: rgb(58, 8, 240);
+    letter-spacing: 15px;
+
+}
+
+.fact3 {
+    font-family: "Kyiv Type Titling Medium", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: rgb(34, 177, 34);
+    word-spacing: 25px;
+}
+
+.fact4 {
+    font-family: "Prociono", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 125%;
+    color: rgb(120, 68, 168);
+    text-decoration-line: line-through;
+    text-decoration-color: aqua;
+}
+
+.list-header li {
+    color: cadetblue;
+    list-style: circle;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.livingroom {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+
+}
+
+.text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.text-about {
+    text-shadow: 1px 1px 1px;
+}
