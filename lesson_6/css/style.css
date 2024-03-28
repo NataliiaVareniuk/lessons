@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,regular,500,700');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700');
+
+@import url("reset.css");
+
+
+body {
+    font-family: "Proxima Nova", sans-serif;
+    color: #2b2929;
+    line-height: 1.875;
+
+}
+
+.header h1,
+.header h2,
+.footer h2 {
+    font-size: 32px;
+    text-align: center;
+    color: crimson;
+    line-height: 1;
+
+}
+
+.list-header {
+
+    font-size: 24px;
+    text-align: left;
+    line-height: 1.5;
+    list-style: circle;
+
+}
+
+.livingroom-section {
+
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: #f8f8f8;
+
+}
+
+.livingroom-part {
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+.img {
+    margin-bottom: 40px;
+}
+
+.text-about-livingroom {
+    margin-bottom: 40px;
+}
+
+.text-about-livingroom p {
+    margin-bottom: 20px;
+}
+
+.livingroom-part h2 {
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+
+}
+
+.text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+
+.text-about {
+    text-shadow: 1px 1px 1px;
+}
+
+.list-livingroom {
+    margin-bottom: 40px;
+
+    line-height: 30px;
+}
+
+.list-livingroom ul {
+    line-height: 30px;
+
+}
+
+.list__mark {
+    padding-left: 47px;
+    background: url("../img/mark.png") 0 0 / 32px no-repeat;
+    margin-bottom: 23px;
+    min-height: 32px;
+
+
+}
+
+.eduplay-section {
+    background-color: #914cff;
+    padding: 40px 15px;
+
+}
+
+.allbackground {
+    max-width: 1280px;
+    margin: 0 auto;
+    background: url("../img/explore.png");
+    background: url("../img/holographic.png");
+    background: url("../img/alphabet.png");
+    overflow: hidden;
+}
+
+
+.content-block-picture {
+    max-width: 515px;
+    display: inline-block;
+    margin-left: 70px;
+    vertical-align: top;
+
+}
+
+.content-block-text {
+    font-family: "Quicksand", sans-serif;
+    background: url("../img/explore.png");
+    color: #fff;
+    max-width: 600px;
+    display: inline-block;
+    margin-top: 130px;
+}
+
+.content-block-text h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 30px;
+}
+
+.content-block-text p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    margin-bottom: 20px;
+
+}
+
+.text__button {
+
+    color: #0d1216;
+    padding-top: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 156%;
+}
+
+.content-block-text a {
+    background: url("../img/magister.png") 10px 0 /32px no-repeat;
+    font-size: 16px;
+    padding-left: 40px;
+    min-height: 32px;
+}
+
+.button {
+    background-color: white;
+    height: 48px;
+    width: 217px;
+    border-radius: 8px;
+}
+
+
+
+.colections-section {
+
+    background: url("../img/flower-pattern.png") 0 200px/100% no-repeat;
+    background-color: rgba(0, 0, 0, 0.05);
+    font-size: 0;
+    margin: 0 auto;
+}
+
+.colection-content {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 100px 5px;
+    overflow: hidden;
+
+}
+
+.content-text-part {
+    font-family: "Roboto", sans-serif;
+    color: #000;
+    max-width: 690px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 80px;
+    padding-top: 68px;
+
+}
+
+.content-text-part h2 {
+    font-weight: 300;
+    font-size: 74px;
+    line-height: 74%;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+}
+
+.content-text-part p {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 183%;
+    text-transform: capitalize;
+    text-align: left;
+    margin-bottom: 80px;
+}
+
+.content-text-part .button {
+    width: 223px;
+    height: 72px;
+    background-color: black;
+    font-weight: 400;
+    font-size: 29px;
+    text-transform: capitalize;
+    color: white;
+}
+
+.content-text-part a {
+    text-align: center;
+    background: url("../img/icon-bag.png") 30px 15px /32px no-repeat;
+    padding-left: 70px;
+    padding-top: 12px;
+    font-size: 29px;
+}
+
+.content-img-part {
+    max-width: 442px;
+    display: inline-block;
+    vertical-align: top;
+    border: 3px solid rgba(0, 0, 0, 0.25);
+    border-radius: 40% 0% 40% 0% / 30% 0% 30% 0% ;
+    
+  }
+.kurve{
+    max-width: 424px;
+   border-radius: 40% 0% 40% 0% / 30% 0% 30% 0% ;
+}
+
+.content-img-part img {
+    margin: -23px 23px 23px -23px;
+}
