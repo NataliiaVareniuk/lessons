@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,regular,500,700');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Exo:100,200,300,regular,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:regular,500,600,700');
+
+@import url("fonts.css");
+@import url("reset.css");
+
+.header h1,
+.footer h2 {
+    font-size: 32px;
+    text-align: center;
+    color: crimson;
+    line-height: 1;
+
+}
+
+
+.pseudoclass-sektion {
+    background-color: rgb(145, 115, 177);
+    padding: 45px 45px;
+
+}
+
+.pseudoclass-sektion-part1 {
+    max-width: 1512px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.test1 {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+
+}
+
+.list__item {
+    margin-bottom: 25px;
+}
+
+.list>*:last-child {
+    margin-bottom: 0px;
+
+}
+
+.list__item:nth-child(2n + 1)::before {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(42, 218, 57);
+    max-width: 20px;
+    vertical-align: middle;
+    margin-right: 20px;
+    content: "";
+}
+
+li:active {
+    font-weight: 600;
+
+}
+
+.list__item::before {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    max-width: 20px;
+    vertical-align: middle;
+    margin-right: 20px;
+    content: "";
+}
+
+.list__item.list__item:nth-child(2n + 1):hover::before {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(0, 4, 255);
+    vertical-align: middle;
+    content: "";
+}
+
+.list__item:hover::before {
+    background-color: rgba(255, 251, 0, 0.89);
+    content: "";
+}
+
+.list ul:last-child {
+    margin-bottom: 0px;
+}
+
+.game-part {
+    width: 700px;
+    height: 700px;
+    background-color: brown;
+    margin: 0 auto;
+}
+
+.game-part {
+    width: 700px;
+    height: 700px;
+    background-color: brown;
+    margin: 0 auto;
+}
+
+
+.aboutme-section {
+    background-color: #050505;
+    padding: 45px 45px;
+
+}
+
+.aboutme-part {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1512px;
+
+}
+
+.aboutme-up {
+    font-family: "Exo", sans-serif;
+    color: #fff;
+    margin-bottom: 75px;
+}
+
+.aboutme-up__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 117%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.aboutme-down {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 125%;
+    margin: 0 auto;
+    max-width: 1150px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 50px;
+
+}
+
+.aboutme-down p {
+    display: inline-block;
+    margin-right: 50px;
+
+}
+
+.aboutme-down p::after {
+    margin: 0 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    content: "";
+    margin-left: 50px;
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 51%, rgba(36, 0, 255, 1) 100%);
+}
+
+.aboutme-up__title::after {
+    margin: 0 auto;
+    max-width: 42%;
+    height: 1px;
+    display: block;
+
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 51%, rgba(36, 0, 255, 1) 100%);
+    margin-top: 25px;
+
+}
+
+.aboutme-up__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 222%;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+}
+
+.aboutme-contaсt {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #fff;
+    margin-left: 50px;
+
+}
+
+.aboutme-contaсt .location {
+    text-transform: capitalize;
+}
+
+.aboutme-contaсt a:not(:last-child) {
+    margin-right: 80px;
+
+}
+
+.aboutme-contaсt span {
+    margin-left: 20px;
+}
+
+.aboutme-contaсt span:hover {
+    text-decoration-line: underline;
+}
+
+.phone::before {
+    content: "";
+    background: url("../img/Call.png") 0 0 / 100% no-repeat;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+
+}
+
+.location::before {
+    content: "";
+    background: url("../img/Location.png") 0 0 / 100% no-repeat;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+
+
+
+}
+
+.email::before {
+    content: "";
+    background: url("../img/Email.png") 0 0 / 100% no-repeat;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+
+
+
+
+}
+
+.list-header {
+
+    font-size: 24px;
+    text-align: left;
+    line-height: 1.5;
+    list-style: circle;
+    display: inline-block;
+
+
+}
+
+.livingroom-section {
+
+    padding: 45px;
+    background-color: #f8f8f8;
+    font-family: "Proxima Nova", sans-serif;
+    color: #2b2929;
+    line-height: 1.875;
+
+}
+
+.livingroom-part {
+    max-width: 1070px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.img {
+    margin-bottom: 40px;
+}
+
+.text-about-livingroom {
+    margin-bottom: 40px;
+}
+
+.text-about-livingroom p {
+    margin-bottom: 20px;
+}
+
+.livingroom-part h2 {
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+
+}
+
+.text-site {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+
+.text-about {
+    text-shadow: 1px 1px 1px;
+}
+
+.list-livingroom {
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+
+.list-livingroom ul {
+    line-height: 30px;
+    margin-left: 37px;
+
+}
+
+.list__mark {
+    margin: 0px 37px 0px 0px;
+}
+
+.list__mark:not(:last-child) {
+    margin-bottom: 23px;
+}
+
+.livingroom-part>*:last-child {
+    margin-bottom: 0px;
+
+}
+
+.list__mark::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    background: url("../img/mark.png") 0 0 / 100% no-repeat;
+    margin-left: -37px;
+
+}
+
+
+
+.game-section {
+    background-color: rgb(220, 206, 235);
+    padding: 45px 45px;
+
+}
+
+.game-background {
+    max-width: 1512px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.game-part {
+    width: 700px;
+    height: 700px;
+    background-color: rgb(209, 114, 114);
+    margin: 0 auto;
+}
+
+
+
+.start {
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    font-weight: 600;
+
+    background-color: red;
+}
+
+.start:hover {
+    visibility: visible;
+}
+
+.start:hover+.step1 {
+    visibility: visible;
+}
+
+.step1:hover {
+    visibility: visible;
+}
+
+
+.step1:hover+.step2 {
+    visibility: visible;
+}
+
+
+
+.step1 {
+    width: 80px;
+    height: 120px;
+    background-color: red;
+    visibility: hidden;
+}
+
+
+.step2 {
+    width: 240px;
+    height: 50px;
+    background-color: red;
+    margin-top: -50px;
+    margin-left: 80px;
+    visibility: hidden;
+
+}
+
+.step2:hover {
+    visibility: visible;
+}
+
+.step2:hover+.step3 {
+    visibility: visible;
+}
+
+.step3 {
+    width: 50px;
+    height: 160px;
+    background-color: red;
+    margin-top: -50px;
+    margin-left: 270px;
+    visibility: hidden;
+
+}
+
+.step3:hover {
+    visibility: visible;
+}
+
+.step3:hover+.step4 {
+    visibility: visible;
+}
+
+.step4 {
+    width: 130px;
+    height: 30px;
+    background-color: red;
+    margin-left: 270px;
+    visibility: hidden;
+}
+
+.step4:hover {
+    visibility: visible;
+}
+
+.step4:hover+.step5 {
+    visibility: visible;
+}
+
+.step5 {
+    width: 20px;
+    height: 130px;
+
+    background-color: red;
+    margin-left: 400px;
+    margin-top: -30px;
+    visibility: hidden;
+}
+
+.step5:hover {
+    visibility: visible;
+}
+
+.step5:hover+.step6 {
+    visibility: visible;
+}
+
+.step6 {
+    width: 130px;
+    height: 20px;
+
+    background-color: red;
+    margin-left: 290px;
+    margin-top: -4px;
+    visibility: hidden;
+}
+
+.step6:hover,
+.step7:hover {
+    visibility: visible;
+}
+
+.step6:hover+.step7 {
+    visibility: visible;
+}
+
+.step7 {
+    width: 10px;
+    height: 120px;
+    background-color: red;
+    margin-left: 290px;
+    padding-top: 120px;
+    visibility: hidden;
+}
+
+.step7:hover .step8 {
+    visibility: visible;
+
+}
+
+.step8 {
+    width: 42px;
+    margin-left: -15px;
+    height: 20px;
+    background-color: rgb(0, 162, 255);
+    visibility: hidden;
+}
+
+
+
+.step8:hover {
+    width: 80px;
+    height: 80px;
+    content: "Ура!";
+    background-color: rgba(217, 255, 0, 0.938);
+    padding-left: 25px;
+    padding-top: 30px;
+    margin-left: -35px;
+}
