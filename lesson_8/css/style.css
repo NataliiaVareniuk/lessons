@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant:regular,700italic');
+
+@import url("reset.css");
+
+.header h1,
+.footer h2 {
+    font-size: 36px;
+    text-align: center;
+    color: rgb(12, 161, 62);
+    line-height: 1;
+    font-family: "Cormorant", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+
+}
+
+.page {
+    background-color: #d6ebb3;
+    padding: 45px 45px;
+
+}
+
+.webgrafika_sektion {
+    max-width: 1512px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.icons-part {
+    border: 3px solid #04c1e1;
+    font-size: 0px;
+    margin-bottom: 25px;
+
+}
+
+.icons p:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.img_view {
+    vertical-align: middle;
+    margin-right: 25px;
+    width: 10%;
+    min-width: 50px;
+
+
+}
+.webp-view{
+    vertical-align: middle;
+    margin-right: 25px;
+    width: 50%;
+   
+
+}
+
+.img_view:hover {
+    transform: scale(1.2);
+}
+
+.brand {
+    width: 25%;
+}
+
+.icons {
+    width: 33.3%;
+    margin: 0 auto;
+    display: inline-block;
+    font-family: "Cormorant", sans-serif;
+    font-weight: 400;
+    padding: 15px 15px;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+
+}
+
+.jpg-part {
+    border: 3px solid #75e4de;
+    font-size: 0px;
+    margin-bottom: 25px;
+
+}
+.jpg-content{
+    width: 75%;
+   
+}
