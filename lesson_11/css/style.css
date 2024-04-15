@@ -428,7 +428,7 @@ body {
 .wheel__car {
     width: 46px;
     height: 46px;
-    background: url('/img/wheel.png') center /100% no-repeat;
+    background: url('../img/wheel.png') center /100% no-repeat;
     border: 1px solid black;
     border-radius: 50%;
     position: absolute;
