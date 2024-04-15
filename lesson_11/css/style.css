@@ -225,7 +225,7 @@ body {
     margin: 25px 30px;
     height: 104px;
     border-radius: 50%;
-    background: url('/img/flag.png') center/100px no-repeat;
+    background: url('../img/flag.png') center/100px no-repeat;
     border: 2px solid gold;
 }
 
@@ -271,7 +271,7 @@ body {
 
 .training-section__creative {
 
-    background: url('/img/car.jpg') 0 0/100% no-repeat;
+    background: url('../img/car.jpg') 0 0/100% no-repeat;
     width: 1240px;
     height: 720px;
 }
