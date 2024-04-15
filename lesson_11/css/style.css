@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic');
+
+
+@import url("reset.css");
+
+
+body {
+    font-family: Rubik, serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #2b2929;
+    line-height: 1.875;
+
+}
+
+.page {
+    background-color: #f7cde5;
+    padding: 45px 45px;
+
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+.page__container {
+    padding: 25px 25px;
+    max-width: 1290px;
+    margin: 0 auto;
+
+}
+
+.title-header {
+    text-align: center;
+    background-color: #32b2e5;
+
+}
+
+.blocks__title,
+.car__title {
+    text-align: center;
+
+}
+
+.training-section__2d {
+    background-color: #459bca;
+    padding: 20px 25px;
+}
+
+.blocks__group {
+    font-size: 0px;
+    margin: 0 -10px;
+    overflow: hidden;
+}
+
+.card__content,
+.cards__3dcontent {
+    width: 11%;
+    margin: 25px 25px;
+    height: 100px;
+    border-radius: 5%;
+    vertical-align: top;
+    opacity: 0.4;
+    padding: 10px 10px;
+    display: inline-block;
+    border: 2px solid #6b9caf;
+    background-color: #2a3879;
+    color: #6b9caf;
+    font-size: 12px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.card__content:last-child {
+    margin-right: 0px;
+}
+
+.cards__3dcontent:last-child {
+    margin-right: 0px;
+}
+
+.cards__3dcontent {
+    background-color: #bd7bb8;
+    border: 2px solid#6f3862;
+    color: #6f3862;
+    opacity: 1;
+}
+
+.card__content--mod:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.card__content--mod2:hover {
+    transform: translate(-10px, -10px);
+    opacity: 1;
+}
+
+.card__content--mod3:hover {
+    transform: translate(10%, -10%);
+    opacity: 1;
+}
+
+.card__content--mod4:hover {
+    transform: scale(0.2);
+    opacity: 1;
+}
+
+.card__content--mod5:hover {
+    transform: rotate(45deg);
+    opacity: 1;
+}
+
+.card__content--mod6:hover {
+    transform: rotate(-90deg);
+    opacity: 1;
+}
+
+.card__content--mod7:hover {
+    transform: rotate(360deg);
+    opacity: 1;
+}
+
+.card__content--mod8:hover {
+    transform: scale(-1, 1);
+    opacity: 1;
+}
+
+.card__content--mod9:hover {
+    transform: skew(-15deg, 0deg);
+    opacity: 1;
+}
+
+.card__content--mod10:hover {
+    transform: skew(0deg, 25deg);
+    opacity: 1;
+}
+
+.card__content--mod11:hover {
+    transform: translate(30%, 20%) scale(0.5) rotate(30deg) skew(-10deg, 10deg);
+    opacity: 1;
+}
+
+.card__content--mod12:hover {
+    transform-origin: 100px 0px;
+    transform: scale(0.5);
+    opacity: 1;
+}
+
+.card__content--mod13:active {
+    transform-origin: 0px 100px;
+    transform: scale(0.5);
+    opacity: 1;
+}
+
+.card__content--mod14:active {
+    transform-origin: 100px 0px;
+    transform: rotate(90deg);
+    opacity: 1;
+}
+
+.card__content--mod15:active {
+    transform-origin: 123px 50px;
+    transform: rotate(180deg);
+    opacity: 1;
+}
+
+.card__content--mod16:active {
+    transform-origin: 20px 50px;
+    transform: skew(0deg, 90deg);
+    opacity: 1;
+}
+
+.card__content--mod17:active {
+    transform-origin: 50px 50px;
+    transform: skew(90deg, -90deg);
+    opacity: 0;
+}
+
+.card__content--mod18:active {
+    transform-origin: 100px 0px;
+    transform: scale(-1, 1);
+    opacity: 0;
+}
+
+.training-section__3d {
+    background-color: #ccd0fd;
+    padding: 20px 25px;
+}
+
+.cards {
+    perspective: 300px;
+    perspective-origin: center;
+    transform-style: preserve-3d;
+}
+
+.cards__3dcontent--mod:hover {
+    transform: translate3d(148px, 0px, 0px);
+}
+
+.cards__3dcontent--mod2:active {
+    transform: translate3d(-148px, 0px, 0px);
+}
+
+.cards__3dcontent--mod3:hover {
+    transform: scale3d(1, -1, -1);
+}
+
+.cards__3dcontent--mod4:hover {
+    transform: rotate3d(1, 1, 0, 180deg);
+}
+
+.cards__3dcontent--mod5:hover {
+    transform: translate3d(0px, 0px, 20px) scale3d(-1, 1, 1);
+}
+
+.cards__3dcontent--mod6:active {
+    transform: rotateX(180deg);
+    transition: all 0.8s;
+}
+
+.cards__coin {
+    width: 103px;
+    margin: 25px 30px;
+    height: 104px;
+    border-radius: 50%;
+    background: url('/img/flag.png') center/100px no-repeat;
+    border: 2px solid gold;
+}
+
+.coin__body img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.coin__body {
+    position: relative;
+    width: 200px;
+    perspective: 500px;
+}
+
+.coin__front {
+    transform-origin: 50px 50px 0px;
+    transform: rotate3d(0, 1, 0, 0deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.coin__back {
+    backface-visibility: hidden;
+    transform-origin: 50px 50px 0px;
+    transform: rotate3d(0, -1, 0, 180deg);
+}
+
+.coin__front,
+.coin__back {
+    transition: all 0.5s;
+}
+
+.coin__body:hover .coin__front {
+    transform-origin: 50px 50px 0px;
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.coin__body:hover .coin__back {
+    transform-origin: 50px 50px 0px;
+    transform: rotate3d(0, -1, 0, 0deg);
+}
+
+.training-section__creative {
+
+    background: url('/img/car.jpg') 0 0/100% no-repeat;
+    width: 1240px;
+    height: 720px;
+}
+
+.car__container {
+    position: relative;
+
+
+    margin: 466px 380px;
+    padding-bottom: 10px;
+    width: 450px;
+    height: 120px;
+}
+
+.car__title:hover {
+
+    text-shadow: 2px 2px 5px #cef0fb;
+}
+
+.model-car__body {
+    width: 308px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5% 0% 5% 0%;
+    background-color: #1e2aaf;
+    position: absolute;
+    right: 41px;
+    transition: all 0.5s;
+    bottom: 0;
+}
+
+
+
+.body-part__middlight,
+.body-part__bamper {
+    height: 17px;
+    width: 20px;
+    position: absolute;
+    background-color: #1e2aaf;
+    bottom: -1px;
+    left: -21px;
+
+}
+
+.body-part__bamper--plate {
+    height: 17px;
+    border-radius: 50% 0 0 0;
+    width: 5px;
+    background-color: azure;
+    position: absolute;
+    bottom: -1px;
+    left: -25px;
+
+}
+
+.body-part__middlight {
+    bottom: 16px;
+    background-color: rgb(24, 4, 4);
+    left: -21px;
+}
+
+.body-part__middlight--plate {
+    height: 17px;
+    border-radius: 50% 0 0 50%;
+    width: 5px;
+    background-color: white;
+    position: absolute;
+    bottom: 16px;
+    left: -25px;
+
+}
+
+.body-part__middlight--plate:hover {
+
+    box-shadow: -16px 6px 34px 19px white;
+
+}
+
+.body-part__headlight {
+    height: 14px;
+    width: 22px;
+    border-radius: 100% 0 0 13%;
+    position: absolute;
+    background-color: white;
+    opacity: 0.5;
+    bottom: 33px;
+    left: -22px;
+
+}
+
+.body-part__headlight--front:hover {
+    box-shadow: -23px 18px 27px 24px white;
+    opacity: 1;
+
+}
+
+.body-part__headlight--front::after {
+    content: "";
+    height: 72px;
+    width: 140px;
+    border-radius: 0% 50% 40% 13%;
+    position: absolute;
+    opacity: 0;
+    box-shadow: -17px 1px 23px 24px white;
+    background-color: rgb(255, 255, 255);
+    filter: blur(11px);
+    box-shadow: -17px 1px 23px 24px white;
+    opacity: 0.7;
+    bottom: -18px;
+    left: -130px;
+    display: none;
+
+}
+
+.body-part__headlight:hover::after {
+    display: block;
+}
+
+.model-car__body:hover {
+
+    box-shadow: 6px 31px 23px -14px #abdef1;
+}
+
+.body-part__part02 {
+    height: 13px;
+    width: 205px;
+    position: absolute;
+    border-radius: 0% 15% 0% 0%;
+    border: 1px solid black;
+    background-color: #1e2aaf;
+    top: -14px;
+    left: 102px;
+    transform: skewX(-1deg);
+}
+
+.body-part__part01 {
+    height: 13px;
+    width: 120px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: #1e2aaf;
+    top: -14px;
+    left: 55px;
+    transform: skewX(-82deg);
+}
+
+.wheel__car:hover {
+    transform-origin: 23px 23px;
+    transform: rotate(-360deg);
+    transition: all 1s;
+
+}
+
+.wheel__car {
+    width: 46px;
+    height: 46px;
+    background: url('/img/wheel.png') center /100% no-repeat;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+
+    right: 296px;
+    bottom: -8px;
+}
+
+.wheel__car--back {
+    right: 50px;
+}
+
+.body-part__part03 {
+    position: absolute;
+    top: -49px;
+    right: 13px;
+    width: 182px;
+    height: 41px;
+
+    background: #1e2aaf;
+    margin: auto;
+    transform: perspective(120px) rotateX(45deg);
+
+}
+
+.body-part__part04 {
+    position: absolute;
+    top: -42px;
+    right: 29px;
+    width: 152px;
+    height: 33px;
+
+    background: #9cdde9;
+    margin: auto;
+    transform: perspective(120px) rotateX(45deg);
+
+}
+
+.body-part__headlight--back {
+    background-color: red;
+    top: 3px;
+    left: 302px;
+    transform: rotate(90deg);
+    opacity: 0.7;
+
+
+}
+
+.body-part__headlight--back:hover {
+
+    box-shadow: 0px -11px 47px 21px rgb(238, 64, 64);
+    opacity: 1;
+
+}
+
+.body-part__door {
+    position: absolute;
+    background-color: #1e2aaf;
+    z-index: 10;
+}
+
+.body-part__door--back {
+    background-color: black;
+    width: 2px;
+    height: 63px;
+    top: -15px;
+    left: 101px;
+
+}
+
+.body-part__door--front {
+    width: 4px;
+    height: 85px;
+    top: -36px;
+    left: 200px;
+    border: 1px solid black;
+
+}
+
+.body-part__bamper--back {
+
+    position: absolute;
+    border-radius: 33% 2%;
+    background-color: #111113;
+    bottom: 1px;
+    left: 306px;
+    width: 14px;
+    height: 30px;
+}
+
+
+.body-part__door--handle-front {
+
+    border-radius: 20% 20%;
+    border: 1px solid #3a46c7;
+    bottom: 34px;
+    left: 182px;
+    width: 14px;
+    height: 4px;
+
+}
+
+.body-part__door--handle-back {
+
+    border-radius: 20% 20%;
+    border: 1px solid #3a46c7;
+    bottom: 34px;
+    left: 207px;
+    width: 14px;
+    height: 4px;
+
+}
