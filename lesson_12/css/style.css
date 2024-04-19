@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic');
+
+
+@import url("reset.css");
+@import url("car.css");
+@import url("ufo.css");
+
+body {
+    font-family: Rubik, serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #2b2929;
+    line-height: 1.875;
+
+}
+
+.page {
+    background-color: #f7cde5;
+
+
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+.page__container {
+    padding: 25px 25px;
+    max-width: 1290px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+.title-header {
+    text-align: center;
+    background-color: #32b2e5;
+
+}
+
+
+.training-section__2d {
+    background-color: #32b2e5;
+    padding: 20px 25px;
+    position: relative;
+    margin-bottom: 50px;
+
+
+}
+
+.training-section__creative {
+    background: url('../img/car.jpg') 0 0/100% no-repeat;
+    width: 1240px;
+    height: 720px;
+    position: relative;
+}
+
+.blocks__group {
+    font-size: 0px;
+    min-height: 200px;
+
+}
+
+.card__content {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: 50px 50px;
+    display: inline-block;
+
+}
+
+.card__content--cirle {
+    border: 2px solid #6b9caf;
+    background-color: #294c;
+    top: 0px;
+    left: 0px;
+    transform: rotate(45grad);
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+    animation-timing-function: linear;
+
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes move {
+    0% {
+        transform: scale(1);
+        border-radius: 50%;
+    }
+
+    25% {
+        transform: rotate(90deg) scale(0.75);
+        border-radius: 25%;
+        background-color: rgb(0, 247, 255);
+    }
+
+    50% {
+        transform: rotate(90deg) scale(0.50);
+        border-radius: 10%;
+        background-color: #32b2e5;
+        padding: 20px 25px;
+
+    }
+
+    75% {
+        transform: rotate(360deg) scale(0.75);
+        border-radius: 25%;
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+        border-radius: 50%;
+    }
+
+
+
+}
+
+.card__content--puls {
+
+    top: 0px;
+    left: 200px;
+
+    background-color: blue;
+    border-radius: 50%;
+    position: relative;
+
+}
+
+.card__content--puls::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 8px solid rgb(0, 81, 255);
+    opacity: 0.1;
+
+    animation-name: move_puls;
+
+    animation-duration: 2s;
+    transition-duration: 2s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move_puls {
+    0% {
+        transform: scale(0.5);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+
+}
+
+.orbit__line {
+    width: 146px;
+    height: 144px;
+    border-radius: 50%;
+    border: 2px solid darkblue;
+    position: relative;
+
+    top: -25px;
+    left: 185px;
+
+}
+
+.orbit__move {
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    background-color: azure;
+    position: absolute;
+    top: 66px;
+    left: 0;
+    transform-origin: 79px 8px;
+    
+
+    animation-name: move_orbit;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: alternate;
+
+}
+
+.orbit__move:active {
+    animation-play-state: paused;
+}
+
+@keyframes move_orbit {
+    0% {
+        transform: rotateZ(0) translate(-5px);
+        background-color: red;
+
+    }
+
+    25% {
+        transform: rotateZ(90deg) translate(-5px);
+        background-color: green;
+
+
+    }
+
+    50% {
+        transform: rotateZ(180deg) translate(5px);
+       
+        background-color: yellow
+    }
+
+    75% {
+        transform: rotateZ(270deg) translate(-0px);
+       
+        background-color: orange
+    }
+
+    100% {
+        transform: rotateZ(360deg) translate(-5px);
+        background-color: red;
+    }
+
+
+}
