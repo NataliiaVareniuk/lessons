@@ -260,40 +260,6 @@ h1 {
 
 }
 
-@media (any-hover: hover){
-	.title__link:hover {
-    transform: scale(1.1);
-    
-  }
-  .icons-price__selected:hover {
-    outline: 2px solid #b1b1b1;
-    outline-offset: -3px;
-  }
-  
-  .icons-price__basket:hover {
-    outline: 2px solid #e78e09;
-  }
-
-  .icons-price__basket:hover,
-  .icons-price__basket:active {
-    outline: 2px solid #e78e09;
-
-    outline-offset: -2px;
-  }
-  .info__product:hover {
-    color: #ffbc57;
-
-  }
-  .icons-price__basket:hover {
-    transform: scale(1.02);
-  }
-
-  .img__product:hover {
-    transform: scale(1.01);
-    box-shadow: 2px 2px 4px rgba(186, 187, 184, 0.5);
-
-  }
-}
 
 
 
@@ -416,6 +382,8 @@ h1 {
 
 .icons-price__img {
   width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .item__buy {
@@ -607,3 +575,32 @@ h1 {
  
  
   }
+  @media (any-hover: hover){
+    .title__link:hover {
+      transform: scale(1.1);
+      
+    }
+    .icons-price__selected:hover {
+      outline: 2px solid #b1b1b1;
+      outline-offset: -3px;
+    }
+    
+  
+    .icons-price__img:hover{
+      outline: 2px solid #e78e09;
+      outline-offset: -2px;
+      transform: scale(1.02);
+    }
+    .info__product:hover {
+      color: #ffbc57;
+  
+    }
+  
+  
+    .img__product:hover {
+      transform: scale(1.01);
+      box-shadow: 2px 2px 4px rgba(186, 187, 184, 0.5);
+  
+    }
+  }
+  
