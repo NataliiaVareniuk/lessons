@@ -1,0 +1,144 @@
+@use "sass:math";
+
+@import url("https://fonts.googleapis.com/css?family=Grenze:300,300italic,regular,italic,500,500italic,600,600italic,700,700italic&display=swap");
+
+
+@import "_reset.scss";
+
+
+
+body {
+
+
+    font-family: "Grenze", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    color: black;
+    background-color:white;
+
+
+
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>main {
+    flex-grow: 1;
+}
+
+
+
+[class*=__container] {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    overflow: hidden;
+
+}
+
+
+
+.header {
+
+    // .header__menu
+   
+    width: 100%;
+    background-color: rgb(29, 185, 81);
+    margin-bottom: 50px;
+
+
+   
+}
+
+
+.header {
+
+		// .header_title
+
+		&__title {
+            text-align: center;
+            font-size: 32px;
+            margin: 0 auto;
+            padding: 20px 20px;
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+           
+		}
+}
+.page {
+
+		width: 800px;
+        margin: 0 auto;
+
+}
+.home-work {
+
+	padding: 20px 20px;
+		// .home-work__title
+		&__title {
+            text-align: center;
+            font-size: 32px;
+            margin: 0 auto;
+            padding: 20px 20px;
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+            background-color: rgba(56, 250, 30, 0.356);
+           
+		}
+
+		// .home-work__task
+
+		&__task {
+            
+            font-size: 22px;
+            margin: 0 auto;
+            background-color: rgb(120, 218, 153);
+            border-radius: 10px;
+            border:2px solid black;
+            padding: 20px 20px;
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+		}
+
+		// .home-work__solution
+
+		&__solution {
+            @extend .home-work__task;
+            background-color: rgb(188, 235, 96);
+            border:1px solid black;
+            margin-bottom: 50px;
+            padding: 20px 20px;
+		}
+        &__button{
+            border-radius: 10px;
+            overflow: hidden;
+            font-size: 22px;
+            width: 140px;
+            height: 60px;
+            padding: 10px 20px;
+            background-color: rgb(20, 220, 70);
+             margin-bottom: 20px;
+            
+            &:hover{
+                transform: scale(0.95);
+            }
+        }
+        label{
+            font-size: 26px;
+            width: 80px;
+            height: 40px;
+
+        }
+        
+}
+
+
+

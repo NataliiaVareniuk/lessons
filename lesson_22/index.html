@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- Ukraine - uk -->
+<!-- Мова не визначена - zxx -->
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Prociono:regular" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>lesson_21</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1 class="header__title"> Заняття 21. JavaScript (частина 1)</h1>
+     
+    </header>
+    <main class="page">
+  <section class="page__home-work home-work">
+    
+    <h2 class="home-work__title ">  Задача №1 </h2>
+    <div class="home-work__task">
+      Що потрапить в консоль?<br>
+      let someVar = 0; <br>
+      let someVar = 0;<br>
+      ++someVar;<br>
+     if (someVar) {
+          	console.log(someVar);}
+        
+     </div>
+     <button  id="click1" type="button" class="home-work__button">Відповідь</button>
+        
+      <input  id="sum" class="home-work__solution"  value="">  
+     
+
+    
+   
+    <h2 class="home-work__title ">  Задача №2</h2>
+    <div class="home-work__task"> 
+      За допомогою циклу FOR виведіть в консоль 10 рядків:<br>
+      Пункт №1<br>
+      Пункт №2<br>
+      і т.д.<br>
+
+    </div> 
+
+
+    <div>
+      
+      <input id="click2" class="home-work__button" type="button" value="Відповідь">   
+      <textarea id="area"  readonly="readonly" rows="10" class="home-work__solution"></textarea>
+
+     </div>
+
+    <h2 class="home-work__title "> Задача №3</h2>
+    <p class="home-work__task">
+      Що потрапить в консоль?<br>
+     if (2 * 20 &#60; = 10 || 30 / 2 &#60; 5 && 10 &#60; = "10" || 20 === "20") { <br>
+      console.log('000');<br>
+       }
+    </p> 
+
+
+      <div >
+      
+        <input id="click3" class="home-work__button" type="button" value="Відповідь">    
+        <textarea id="areaIf"  readonly="readonly" rows="2" class="home-work__solution"></textarea>
+  
+       </div>
+       <h2 class="home-work__title "> Задача №4</h2>
+       <p class="home-work__task">
+      Створіть функцію, яка повертає результат ділення числа a на число b з додаванням рядка "Результат ділення: "<br>
+      Викличте функцію передаючі різні значення, у тому числі не передаючи зовсім.<br>
+      Функція не має повертати NaN, Infinite або помилку <br>
+
+
+      <div >
+        
+
+        <label  for="aNum" >Введіть a:</label><input type="number" id="aNum"    class="home-work__solution "  > <br>
+        <label  for="bNum">Введіть b:</label><input type="number" id="bNum"   class="home-work__solution"  > <br>
+        <button id="click4" onclick="calculation()" class="home-work__button" type="button" > Pезультат </button>  
+
+        <button type="button"  onclick="clearMethod()" class="home-work__button">Очистити </button>
+           
+        <textarea id="areaSum"  readonly="readonly" rows="2" class="home-work__solution"></textarea>
+        
+       </div>
+
+       <h2 class="home-work__title "> Задача №5</h2>
+       <p class="home-work__task">
+        Створіть масив даних - 5 елементів, один з яких число 10<br>
+        Обробіть масив за допомогою методу перебору<br>
+        Перевіряйте елемент на відповідність числу 10, та у разі відповідності, виводьте в консоль<br>
+     
+
+      <div >
+        <label  id="labelArray" for="arrayText" >Масив із елементів:</label> <textarea id="arrayText"  readonly="readonly" rows="2" class="home-work__solution"></textarea><br>
+        <button  type="button" onclick="schowArray()" class="home-work__button">Масив </button> <br>
+        <label for="findElem">Введіть елемент, який потрібно знайти</label><input type="text" id="findElem"   class="home-work__solution"  > <br>
+
+       
+        <button type="button"  onclick="readArray()" class="home-work__button">Знайти </button>
+           
+        <textarea id="areaArray"  readonly="readonly" rows="2" class="home-work__solution"></textarea>
+        <label for="addElem" >Введіть елемент, який потрібно додати</label><input type="text" id="addElem"   class="home-work__task"  > <br>
+       
+        <button type="button"  onclick="pushArray()" class="home-work__button">Додати </button>
+        <button type="button"  onclick="clearMethod()" class="home-work__button">Очистити </button>
+       </div>
+
+  
+  </section>    
+      
+    </main>
+    <footer>
+    </footer>
+  </div>
+  <script src="js/script.js"> </script>
+</body>
+
+</html>
