@@ -9,7 +9,7 @@ click1.onclick = function () {
 
 
 click2.onclick = function () {
-	let liAmount = parseFloat(document.getElementById('aNum').value);
+	let liAmount = parseInt(document.getElementById('aNum').value);
 	if (isNaN(liAmount) || liAmount == "") liAmount = 1;
 
 	const textarea = document.querySelector('.liarea');
