@@ -966,6 +966,10 @@ body {
     left: -15px;
   }
 }
+.photo-block__light img {
+  width: 316px;
+  height: 354px;
+}
 @media (max-width: 864px) {
   .photo-block__light img {
     width: 80%;
