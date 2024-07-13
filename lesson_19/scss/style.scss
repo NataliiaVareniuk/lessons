@@ -1360,6 +1360,40 @@ body {
         }
     }
 
+    &__link {
+        position: relative;
+        transition: all 0.5s;
+
+        &::after {
+            content: "";
+            width: 48px;
+            height: 48px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            background: url("../img/footer01/icon-w.svg") center center / 100% no-repeat;
+            //filter: invert(56%) sepia(55%) saturate(1643%) hue-rotate(321deg) brightness(100%) contrast(102%);
+            opacity: 0;
+        }
+
+        @media(any-hover:hover) {
+            &:hover {
+                &::after {
+                    opacity: 1;
+                }
+
+                .contact-content__img {
+                    filter: brightness(50%);
+                }
+
+            }
+        }
+
+
+    }
+
     &__img {
         aspect-ratio: 1/1;
         width: 200px;
@@ -1369,9 +1403,12 @@ body {
 
         @media(any-hover:hover) {
             &:hover {
-                transform: scale(1.02);
+                // transform: scale(1.02);
+                filter: brightness(50%);
             }
         }
+
+
     }
 
     // .contact-content__form
@@ -1517,9 +1554,11 @@ body {
         }
 
         @media(max-width:428px) {
-            column-gap: 50px;
-            justify-content: center;
+            justify-content: space-between;
+
         }
+
+
     }
 
     // .footer-content__logo
@@ -1594,23 +1633,29 @@ body {
     }
 }
 
-.footer-content {
-
-    // .footer-content__catalog
-    &__catalog {}
-}
-
 .list-footer {
 
     // .list-footer__title
     &__title {
         font-weight: 600;
         text-transform: capitalize;
+
+        @media(max-width:428px) {
+
+            text-align: center;
+        }
     }
 
     &__title--margin {
         &:not(:last-child) {
             margin-bottom: 18px;
+        }
+
+        @media(max-width:428px) {
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
         }
     }
 
@@ -1619,6 +1664,13 @@ body {
         display: flex;
         flex-direction: column;
         gap: 18px 5px;
+
+        @media(max-width:428px) {
+            flex-direction: row;
+            gap: 10px 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     // .list-footer__item
@@ -1629,7 +1681,7 @@ body {
 
         @media(max-width:428px) {
             font-size: 16px;
-            column-gap: 14px;
+            //  column-gap: 14px;
         }
 
         @media(any-hover: hover) {
