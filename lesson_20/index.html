@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- Ukraine - uk -->
+<!-- Мова не визначена - zxx -->
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>lesson_20</title>
+</head>
+
+<body id="body">
+  <div class="wrapper">
+    <header id="header" class="header">
+      <div class="header__top top-header" id="closeSignUp">
+        <div class="top-header__container part-signup">
+          <div class="part-signup__login ">
+            <p class="part-signup__info"> Sign up and get 20% off to your first order.</p>
+            <a class="part-signup__signup" href="#" target="_blank">Sign Up Now </a>
+          </div>
+          <button type="button" onclick="getClose()" class="part-signup__close">
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <div class="header__bottom bottom-header">
+        <div class="bottom-header__container content-menu ">
+          <div class="content-menu__menu-left">
+            <button type="button" class="content-menu__burger-btn">
+              <span></span>
+            </button>
+            <div class="content-menu__logo"><span>SHOP.CO</span></div>
+          </div>
+          <nav data-da=".header__burger, 896, 1" class="content-menu__navigation menu-part">
+            <ul class="menu-part__list">
+              <li class="menu-part__item item-submenu">
+                <a href="#" class="item-submenu__link item-submenu__link--main">Shop</a>
+                <ul class="item-submenu__submenu-list">
+                  <li class="item-submenu__submenu-link"><a href=#>Shop01</a></li>
+                  <li class="item-submenu__submenu-link"><a href=#>Shop02</a></li>
+                  <li class="item-submenu__submenu-link"><a href=#>Shop03</a></li>
+                </ul>
+              </li>
+              <li class="menu-part__item">
+                <a href="#" class="menu-part__link "> On Sale</a>
+              </li>
+              <li class="menu-part__item">
+                <a href="#" class="menu-part__link ">New Arrivals</a>
+              </li>
+              <li class="menu-part__item">
+                <a href="#" class="menu-part__link ">Brands</a>
+              </li>
+            </ul>
+          </nav>
+          <div data-da=".bottom-header__search-new, 551, 0" class="content-menu__search search-header">
+            <form action="#" class=" search-header__form">
+              <input type="search" placeholder="Search for products..." class="search-header__input">
+              <button onclick="onClickSearch()" type="submit" class="search-header__button-search"></button>
+            </form>
+          </div>
+          <div class="content-menu__client client-button">
+            <button id="click1" class="client-button__search-client"><span></span></button>
+            <a href="#" class="client-button__shopping"><span></span></a>
+            <a href="#" class="client-button__account"><span></span></a>
+          </div>
+        </div>
+        <div id="search" style="display: none" class="bottom-header__search-new "><span></span></div>
+      </div>
+      <div class="header__burger burger-header">
+        <div class="burger-header__container">
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <section class="page-section section-style ">
+        <div class="section-style__content ">
+          <div class="section-style__left left-content">
+            <h1 class="left-content__title">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+            <p class="left-content__info">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+            <a href="#" class="left-content__button"><span>Shop Now</span></a>
+            <ul class="left-content__statistics statistics-list">
+              <li class="statistics-list__item">
+                <p class=" statistics-list__info statistics-list__info--count ">200+ </p>
+                <p class=" statistics-list__info statistics-list__info--info-count "> International Brands</p>
+              </li>
+              <li class="statistics-list__item">
+                <p class=" statistics-list__info statistics-list__info--count ">2,000+ </p>
+                <p class=" statistics-list__info statistics-list__info--info-count "> High-Quality Products</p>
+              </li>
+              <li class="statistics-list__item">
+                <p class=" statistics-list__info statistics-list__info--count ">30,000+</p>
+                <p class=" statistics-list__info statistics-list__info--info-count ">Happy Customers</p>
+              </li>
+            </ul>
+          </div>
+          <div class="section-style__right">
+            <img class="section-style__img" src="img/st.png" alt="Picture ">
+          </div>
+        </div>
+      </section>
+      <section class="brands name-brands">
+        <div class="name-brands__container list-brands">
+          <ul class="list-brands__list ">
+            <li class="list-brands__item">
+              <a href="#"> <img class="list-brands__img" src="img/versace.png" alt="Picture versace brand "></a>
+            </li>
+            <li class="list-brands__item">
+              <a href="#"> <img class="list-brands__img" src="img/zara-logo.png" alt="Picture zara brand "></a>
+            </li>
+            <li class="list-brands__item">
+              <a href="#"> <img class="list-brands__img" src="img/gucci.png" alt="Picture gucci brand "></a>
+            </li>
+            <li class="list-brands__item">
+              <a href="#"> <img class="list-brands__img" src="img/prada.svg" alt="Picture prada brand "></a>
+            </li>
+            <li class="list-brands__item">
+              <a href="#"> <img class="list-brands__img" src="img/calvin.png" alt="Picture calvin klein brand "></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+    </footer>
+  </div>
+  <script src=" js/script.js"> </script>
+  <script src="js/dynamic_adapt.js"></script>
+</body>
+
+</html>
