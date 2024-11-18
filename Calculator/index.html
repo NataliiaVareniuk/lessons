@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:regular,500&display=swap" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/icon512_rounded.png" type="image/x-icon" />
+    <link rel="manifest" href="manifest.json" />
+    <title>Calculator</title>
+</head>
+<script>
+    function appendOperation(operation) {
+        let container = document.getElementById("resultArea");
+        if (container.innerHTML == "0") {
+            if (
+                operation == " + " ||
+                operation == " - " ||
+                operation == " * " ||
+                operation == " / "
+            ) {
+                container.innerHTML += operation;
+            } else container.innerHTML = operation;
+        } else container.innerHTML += operation;
+    }
+    function calculateResult() {
+        let container = document.getElementById("resultArea");
+        let result = eval(container.innerHTML);
+        container.innerHTML = result;
+    }
+    function deleteLast() {
+        let container = document.getElementById("resultArea");
+        if (container.innerHTML.endsWith(" ")) {
+            container.innerHTML = container.innerHTML.slice(0, -3);
+        } else {
+            container.innerHTML = container.innerHTML.slice(0, -1);
+        }
+        if (container.innerHTML == "") container.innerHTML = "0";
+    }
+
+    function deleteAll() {
+        let container = document.getElementById("resultArea");
+        container.innerHTML = container.innerHTML.slice(0, 0);
+        container.innerHTML = "0";
+    }
+</script>
+
+<body>
+    <div id="resultArea">0</div>
+    <table>
+        <tr>
+            <td class="inaccessible">sin x</td>
+            <td class="inaccessible">cos x</td>
+            <td onclick="deleteAll()" class="operation">C</td>
+            <td onclick="deleteLast()" class="operation">DEL</td>
+        </tr>
+        <tr>
+            <td onclick="appendOperation(7)">7</td>
+            <td onclick="appendOperation(8)">8</td>
+            <td onclick="appendOperation(9)">9</td>
+            <td onclick="appendOperation(' / ')" class="operation">/</td>
+        </tr>
+        <tr>
+            <td onclick="appendOperation(4)">4</td>
+            <td onclick="appendOperation(5)">5</td>
+            <td onclick="appendOperation(6)">6</td>
+            <td onclick="appendOperation(' * ')" class="operation">x</td>
+        </tr>
+        <tr>
+            <td onclick="appendOperation(1)">1</td>
+            <td onclick="appendOperation(2)">2</td>
+            <td onclick="appendOperation(3)">3</td>
+            <td onclick="appendOperation(' + ')" class="operation">+</td>
+        </tr>
+        <tr>
+            <td onclick="appendOperation(0)">0</td>
+            <td onclick="appendOperation('.')">,</td>
+            <td onclick="calculateResult()" id="result">=</td>
+            <td onclick="appendOperation(' - ')" class="operation">-</td>
+        </tr>
+    </table>
+</body>
+
+</html>
