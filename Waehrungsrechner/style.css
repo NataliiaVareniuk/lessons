@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:regular,500,600,700,800&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #323232;
+}
+
+div{
+    margin: 0 auto;
+     font-family: 'Open Sans',sans-serif;
+    margin-bottom: 25px;
+    min-height: 100px;
+    color: white;
+    font-size: 24px;
+   
+     
+ }
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding: 0 32px; 
+    position: relative;
+ }
+  .input{
+    height: 60px;
+    background-color:transparent;
+    border:1px solid  rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    flex:1;
+ }
+
+
+.up-and-down{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   
+}
+.button-up-down{
+    background-color: #323232;
+
+}
+.img-up-down{
+    background-color: #323232;
+    cursor: pointer;
+      object-fit: cover;
+}
+.up-and-down:active{
+    transform: scale(0.87);
+ }
+.up-and-down:hover{
+   cursor: pointer;
+}
+
+.up-and-down:active::after{
+  /*  transform: scale(0.87);*/
+   
+}
+.up-and-down:hover::after{
+     cursor: pointer;
+    
+ }
+
+ .currency{
+    color:#7393c8;
+    font-weight: 800;
+    font-size: 16px;
+    position: relative;
+    top: 14px;
+    right: 10px;
+    margin-left: -32px;
+    
+   
+}
+.navbar{
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap:16px;  
+  /*  background-color: rgba(255, 255, 255, 0.1);*/
+}
+.flag{
+   width: 60px;
+    position: absolute;
+    left:45px;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+}
+.button{
+    background-color: #e3e402;
+    border-radius: 10px;
+    border: unset;
+    font-size: 24px;
+    padding: 10px 32px;
+    text-align: center;
+    
+    cursor:pointer;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s;
+    
+   }
+   .button:active{
+    transform: scale(0.9);
+   }
+   
+
+
